@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".Dashboard" 
+    android:background="@drawable/dazzle" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/dazzle" >
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="26dp"
+        android:background="#d3d3d3"
+        android:onClick="register"
+        android:text="Emregency Users     " />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignRight="@+id/button1"
+        android:layout_alignTop="@+id/button1"
+        android:src="@drawable/ic_group_white_24dp_2x" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignRight="@+id/ImageView01"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="36dp"
+        android:background="#d3d3d3"
+        android:onClick="Accident_detection"
+        android:text="Accident Detection     " />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_alignTop="@+id/button2"
+        android:src="@drawable/ic_surround_sound_white_2x" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="28dp"
+        android:background="#d3d3d3"
+        android:onClick="Drowsiness"
+        android:text="Drowsiness Detection           "
+        />
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/Button01"
+        android:layout_alignRight="@+id/Button01"
+        android:layout_alignTop="@+id/Button01"
+        android:src="@drawable/ic_surround_sound_white_2x" />
+
+</RelativeLayout>
